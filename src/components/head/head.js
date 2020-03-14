@@ -1,9 +1,9 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
-import './index.less'
-import Head from "../../components/head/head";
+import Top from "./top";
 
-export default class Index extends Component {
+
+export default class Head extends Component {
 
   componentWillMount () { }
 
@@ -21,9 +21,10 @@ export default class Index extends Component {
 
   render () {
     return (
-      <View className='index'>
-        <Head></Head>
-      </View>
-    )
+      <View className='head'>
+        <Top></Top>
+        <Text>头部</Text>
+    </View>
+  )
   }
 }
