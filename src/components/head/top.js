@@ -4,7 +4,8 @@ import './top.less'
 
 export default class Top extends Component {
 
-  componentWillMount () { }
+  componentWillMount () {
+  }
 
   componentDidMount () { }
 
@@ -22,13 +23,13 @@ export default class Top extends Component {
     return (
       <View className='top'>
         <View className='left'>
-          <Image src={require('../../assets/img/left.png')}></Image>
+          <Image className='img' src={require('../../assets/img/left.png')}></Image>
         </View>
         <View className='right'>
-          <Image src={require('../../assets/img/search.png')}></Image>
-          <Image src={require('../../assets/img/colletion.png')}></Image>
-          <Image src={require('../../assets/img/tuan.png')}></Image>
-          <Image src={require('../../assets/img/dian.png')}></Image>
+          <Image className='img' src={require('../../assets/img/search.png')}></Image>
+          <Image className='img' src={require('../../assets/img/colletion.png')}></Image>
+          <Image className='img' src={require('../../assets/img/tuan.png')}></Image>
+          <Image className='img' src={require('../../assets/img/dian.png')}></Image>
 
         </View>
     </View>
