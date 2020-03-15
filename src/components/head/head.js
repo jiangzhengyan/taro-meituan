@@ -1,6 +1,7 @@
 import Taro, {Component} from '@tarojs/taro'
 import {View, Text, Image} from '@tarojs/components'
 import Top from "./top";
+import Activity from "./activity";
 import './head.less'
 
 
@@ -53,6 +54,7 @@ export default class Head extends Component {
           </View>
 
         </View>
+        <Activity/>
       </View>
     )
   }
