@@ -5,15 +5,27 @@ import './top.less'
 export default class Top extends Component {
 
   componentWillMount () {
+    console.log('componentWillMount');
   }
 
-  componentDidMount () { }
+  componentDidMount () {
+    console.log('componentDidMount');
+  }
 
-  componentWillUnmount () { }
+  componentWillUnmount () {
+    console.log('componentWillUnmount');
 
-  componentDidShow () { }
+  }
 
-  componentDidHide () { }
+  componentDidShow () {
+    console.log('componentDidShow');
+
+  }
+
+  componentDidHide () {
+    console.log('componentDidHide');
+
+  }
 
   config = {
     navigationBarTitleText: '首页'
