@@ -35,13 +35,13 @@ export default class Top extends Component {
     return (
       <View className='top'>
         <View className='left'>
-          <Image className='img' src={require('../../assets/img/left.png')}></Image>
+          <Image className='img' src={require('../../assets/img/left.png')}/>
         </View>
         <View className='right'>
-          <Image className='img' src={require('../../assets/img/search.png')}></Image>
-          <Image className='img' src={require('../../assets/img/colletion.png')}></Image>
-          <Image className='img' src={require('../../assets/img/tuan.png')}></Image>
-          <Image className='img' src={require('../../assets/img/dian.png')}></Image>
+          <Image className='img' src={require('../../assets/img/search.png')}/>
+          <Image className='img' src={require('../../assets/img/colletion.png')}/>
+          <Image className='img' src={require('../../assets/img/tuan.png')}/>
+          <Image className='img' src={require('../../assets/img/dian.png')}/>
 
         </View>
     </View>
