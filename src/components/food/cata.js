@@ -40,10 +40,14 @@ export default class Cata extends Component {
     if (this.state.selectCata&&this.state.selectCata.id!==item.id){
       this.setState({
         selectCata: item
+      },()=>{
+        this.props.onChangeCata&&this.props.onChangeCata(this.state.selectCata)
       })
     }else if (!this.state.selectCata){
       this.setState({
         selectCata: item
+      },()=>{
+        this.props.onChangeCata&&this.props.onChangeCata(this.state.selectCata)
       })
     }
 
