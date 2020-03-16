@@ -2,6 +2,7 @@ import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.less'
 import Head from "../../components/head/head";
+import Food from "../../components/food/food";
 
 export default class Index extends Component {
 
@@ -23,6 +24,7 @@ export default class Index extends Component {
     return (
       <View className='index'>
         <Head></Head>
+        <Food></Food>
       </View>
     )
   }
