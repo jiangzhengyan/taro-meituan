@@ -34,16 +34,19 @@ export default class Head extends Component {
 
   config = {
     navigationBarTitleText: '首页'
-  }
+  };
 
   render() {
-    let {store} =this.state
+    let {store} =this.state;
     return (
       <View className='head'>
-        <Top></Top>
-        <Image src={require('../../assets/img/back.jpg')} className='back'></Image>
+        {/*顶部*/}
+        <Top/>
+        {/*背景*/}
+        <Image src={require('../../assets/img/back.jpg')} className='back'/>
+        {/*商户信息*/}
         <View className='store'>
-          <Image src={require('../../assets/img/store.jpg')} className='store_img'></Image>
+          <Image src={require('../../assets/img/store.jpg')} className='store_img'/>
           <View className='store_text'>
             <Text>{store.title}</Text>
             <Text>{store.notice}</Text>
@@ -54,6 +57,7 @@ export default class Head extends Component {
           </View>
 
         </View>
+        {/*活动,满减等*/}
         <Activity/>
       </View>
     )
