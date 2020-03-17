@@ -3,6 +3,7 @@ import {View, Text, Image} from '@tarojs/components'
 import {AtTabs, AtTabsPane} from 'taro-ui'
 import './foodList.less'
 import "taro-ui/dist/style/components/tabs.scss";
+import AddCut from "../addcut/addCut";
 
 
 
@@ -52,6 +53,7 @@ export default class FoodList extends Component {
                   <Text>{item.title}</Text>
                   <Text>{'月售:'+item.sole}</Text>
                   <Text className='price'>{'$:'+item.price}</Text>
+                  <AddCut food={item}/>
                 </View>
               </View>)
             })
